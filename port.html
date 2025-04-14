@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA4eC3iVB+06M1lBuFwtr5zlCShzfr1Wc9MVPpTxoJvDxrUHs1mKwB6c5BdXUu" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Nu5mZr96p8zBtpXT/6xPIp+hDDYCCgAOrugN12X7RIVV9I1zUJDh/IFmXqV9mWGb" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- *************************Navbar************************* -->
+    <header class="header" style="padding-top:2vh">
+        <a href="#" class="logo" style="padding-left:10vh; padding-top:1vh;">AJAY D</a>
+        <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
+        <nav class="navbar" style="margin-left:12vh">
+            <a href="#home" style="--vlr:1" class="active">Home</a>
+            <a href="#about" style="--vlr:2">About Me</a>
+            <a href="#education" style="--vlr:3">Education</a>
+            <a href="#skills" style="--vlr:4">Skills</a>
+            <a href="#projects" style="--vlr:5">Projects</a>
+            <a href="#internships" style="--vlr:5">Internships</a>
+        </nav>
+    </header>
+    <!-- *************************Home Section************************* -->
+    <section class="home"  id="home">
+        <div class="text-content">
+            <h1>I'm Ajay</h1>
+            <div class="text-animation">
+                <h2>Fullstack Developer</h2>
+            </div>
+            <p style="text-align: justify;">Passionate full-stack developer with expertise in crafting dynamic and responsive web applications. Skilled in front-end and back-end technologies, bringing ideas to life with clean, efficient code. Enthusiastic about problem-solving and continuously learning new tools and frameworks. Committed to building seamless user experiences and scalable solutions.</p>
+            <div class="text-center">
+                <button class="btn" id="readMoreBtn" onclick="toggleText()"><a href="Img/AJAY (Resume).pdf" style="text-decoration: none;">Resume</a></button>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/AjayD17"><i class='bx bxl-github' style="--vlr:7"></i></a>
+                <a href="https://www.linkedin.com/in/ajayd1712/"><i class='bx bxl-linkedin' style="--vlr:9"></i></a>
+                <a href="https://www.instagram.com/ajay_official_17/"><i class='bx bxl-instagram' style="--vlr:7"></i></a>
+            </div>
+        </div>
+        <img src="Img/Ajayd.jpg" style="margin-left:4vh;">
+    </section>
+    <!-- *************************About Section************************* -->
+    <section class="about" id="about">
+        <h2 class="title">About <span>Me</span></h2>
+        <img src="Img/Linkedin Profile.jpg" alt="" class="aboutImg">
+        <div class="text-content2">
+            <h2>Fullstack Developer</h2>
+            <p id="shortText">
+                I am a passionate fullstack developer with a strong foundation in HTML, CSS, Bootstrap, and backend technologies, dedicated to crafting engaging and user-friendly web experiences.
+            </p>
+            <p id="moreText" style="display: none;">
+                I specialize in building responsive and interactive web applications.  
+                Skilled in JavaScript, Python, and Django for backend development.  
+                Experienced in optimizing website performance and accessibility.  
+                Passionate about learning new technologies and improving problem-solving skills.  
+                Dedicated to delivering high-quality code and seamless user experiences.  
+            </p>
+            <button class="btn" id="readMoreBtn" onclick="toggleText()">Read More</button>
+        </div>
+    </section>    
+    <!-- *************************Education Section************************* -->
+    <section class="education" id="education">
+        <h2 class="title">My <span>Education</span></h2>
+        <div class="row">
+            <div class="column">
+                <div class="box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year">2018-2020<i class='bx bxs-calendar'></i></div>
+                            <h3>Higher Secondary School</h3>
+                            <p>I completed my Higher Secondary Education at Ponniah Higher Secondary School, with a focus on Biology and Mathematics. During this period, I developed a keen interest in the life sciences and computer applications, which laid the foundation for my future studies in bioinformatics. I actively participated in science fairs and seminars that enhanced my analytical and presentation skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Education</h2>
+                <div class="box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year">2020-2025<i class='bx bxs-calendar'></i></div>
+                            <h3>Degree College</h3>
+                            <p>I am pursuing an M.Sc. Bioinformatics (Integrated) at the Department of Bioinformatics, Bharathidasan University, as part of the 2020-2025 batch. My coursework includes computational biology, structural bioinformatics, information technology and data analysis, equipping me with a strong foundation in bioinformatics research. Throughout my studies, I have gained hands-on experience in various tools and programming languages relevant to biological data analysis. I am passionate about integrating bioinformatics with software development to contribute to advancements in life sciences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *************************Skills Section************************* -->
+    <section class="skills" id="skills">
+        <h2 class="title">My <span>Skills</span></h2>
+        <div class="wrapper">
+            <div class="skill-content">
+                <h3 class="skill-title">Language</h3>
+                <div class="skill-box skill-box1">
+                    <div class="single-skill">
+                        <span class="topic">HTML</span>
+                        <span class="topic">90%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-1"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">CSS</span>
+                        <span class="topic">90%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-2"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">JavaScript</span>
+                        <span class="topic">75%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-3"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">Bootstrap</span>
+                        <span class="topic">80%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-4"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">React</span>
+                        <span class="topic">85%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-5"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">Python</span>
+                        <span class="topic">80%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-6"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">Django</span>
+                        <span class="topic">70%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-7"></div>
+                    </div>
+                    <div class="single-skill">
+                        <span class="topic">SQL</span>
+                        <span class="topic">85%</span>
+                    </div>
+                    <div class="bar-side">
+                        <div class="bar bar-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *************************Contact Section************************* -->
+    <section class="projects" id="projects">
+        <h2 class="title">My <span>Projects</span></h2>
+        <div class="card-container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet; margin-right:2%;">
+                        <img src="Img/Seven-wonders.png" style="width:35vh; height:20vh; margin-top:3vh;">
+                        <div class="card-content">
+                            <h1>Seven wonders of the world</h1>
+                            <p style="font-size: 2.2vh; margin-bottom:2vh;">This project showcases the Seven Wonders of the World through a visually appealing and responsive website. Utilizing HTML for structure, CSS for styling, and Bootstrap for responsive design, the site provides an engaging user experience across various devices. </p>
+                            <a href="https://ajayd17.github.io/Sevenwonders.github.io/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet; margin-right:2%;">
+                        <img src="Img/Responsive page.png" style="width:40vh; height:23vh; margin-top:1vh;">
+                        <div class="card-content">
+                            <h1>Responsive Landing Page</h1>
+                            <p style="font-size: 2.2vh; margin-bottom: 0.8vh;">A Responsive Landing Page is a visually appealing and mobile-friendly webpage designed to provide a seamless user experience across all devices. It adapts to different screen sizes using flexible layouts, media queries, and modern web technologies. </p>
+                            <a href="https://ajayd17.github.io/SCT_WD_1.github.io/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet;">
+                        <img src="Img/Stopwatch.png" style="width:35vh; height:21vh; margin-top:3vh;">
+                        <div class="card-content">
+                            <h1>Stopwatch Web Application</h1>
+                            <p style="font-size: 2.2vh; margin-bottom:4vh;">The Stopwatch Web Application is a simple yet efficient timer tool built using HTML, CSS, and JavaScript. It features start, stop, and reset functionality, providing an intuitive user experience for tracking time with precision. </p>
+                            <a href="https://ajayd17.github.io/SCT_WD_2/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet; margin-right:2%; padding-top:2vh; padding-left:2vh;">
+                        <img src="Img/Todo.png" style="width:40vh; height:23vh; margin-top:1vh;">
+                        <div class="card-content">
+                            <h1>Todo List</h1>
+                            <p style="font-size: 2.2vh;">A simple and efficient Todo List web application to help you organize tasks, set priorities, and track progress seamlessly. Stay productive with an intuitive interface and easy task management. </p>
+                            <a href="https://ajayd17.github.io/SCT_WD_4/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet; margin-right:2%;">
+                        <img src="Img/Tic tac toe.png" style="width:35vh; height:22vh; margin-top:3vh;">
+                        <div class="card-content">
+                            <h1>Tic Tac Toe</h1>
+                            <p style="font-size: 2.2vh; margin-bottom:1vh;">Tic Tac Toe is a classic two-player game where players take turns marking X or O in a 3x3 grid, aiming to form a horizontal, vertical, or diagonal line. This interactive game enhances strategic thinking and provides a fun challenge for all ages. </p>
+                            <a href="https://ajayd17.github.io/SCT_WD_3/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet;">
+                        <img src="Img/Formvalidate.png" style="width:35vh; height:21vh; margin-top:3vh;">
+                        <div class="card-content">
+                            <h1>Form Validation</h1>
+                            <p style="font-size: 2.2vh; margin-bottom: 1.9vh;">Form Validation ensures user inputs meet specified requirements before submission, improving data accuracy and security. It helps prevent errors by checking fields like email format, password strength, and required inputs. </p>
+                            <a href="https://ajayd17.github.io/Form-Validation/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card" style="border: 2px solid violet; margin-right:2%;">
+                        <img src="Img/Bike.png" style="width:35vh; height:22vh; margin-top:3vh;">
+                        <div class="card-content">
+                            <h1>Component Based Styling</h1>
+                            <p style="font-size: 2.2vh;">Designed a sleek and responsive Bikes Website using component-based styling, ensuring modular and reusable UI elements. Enhanced user experience with dynamic styling and optimized performance for seamless navigation. </p>
+                            <a href="https://ajayd17.github.io/ComponentBasedStyling/" class="btn" style="width:20vh;">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Internships Section-->
+    <section class="internships" id="internships">
+        <h2 class="title">My <span>Internships</span></h2>
+        <div class="container">
+            <div class="row">
+                <!-- Internship 1 -->
+                <div class="col-md-4">
+                    <div class="card2" style="border: 2px solid violet; padding:1vh;">
+                        <div class="card-body">
+                            <img src="Img/Vdart Academy.jpg" style="height:35vh; width:45vh; padding-top:2vh;" alt="Company 3 Logo">
+                            <h2 class="card-title" style="color: yellow; padding-top:1vh;">Full Stack Developer Intern</h2>
+                            <h3 class="card-subtitle text-muted" style="color:lightgreen">Vdart Academy</h3>
+                            <p class="card-text" style="padding-left:2.5vh; padding-right:2.5vh; font-size:1.9vh; margin-top:1vh;">Worked as a Full Stack Developer Intern at Vdart Academy for 4 months, gaining hands-on experience in both frontend and backend development. Developed and optimized dynamic web applications using HTML, CSS, JavaScript, Python, and Django, ensuring responsive and scalable designs.</p>
+                            <p><strong>Duration:</strong> 4 Months</p>
+                            <a href="#" class="btn btn-primary">VView Certificate</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Internship 2 -->
+                <div class="col-md-4">
+                    <div class="card2" style="border: 2px solid violet; padding:2vh; padding-top:3vh;">
+                        <img src="Img/Skillcraft.jpg" style="height:35vh; width:45vh;" alt="Company 2 Logo">
+                        <div class="card-body">
+                            <h2 class="card-title" style="color: yellow; padding-top:1vh;">Web Development Intern</h2>
+                            <h3 class="card-subtitle text-muted"  style="color:lightgreen">SkillCraft Technologies</h3>
+                            <p class="card-text" style="padding-left:2.5vh; padding-right:2.5vh; font-size:1.9vh; margin-top:1vh;">Developed responsive web applications using HTML, CSS, and JavaScript to enhance user experience. Improved website functionality and UI components by implementing modern design practices.</p>
+                            <p style="font-size:1.9vh; margin-bottom:2vh;"><strong>Duration:</strong> 1 Month</p>
+                            <a href="Img/Skillcraft Certificate.pdf" class="btn btn-primary">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Internship 3 -->
+                <div class="col-md-4">
+                    <div class="card2" style="border: 2px solid violet; padding:2vh; padding-top:3vh;">
+                        <div class="card-body">
+                            <img src="Img/Octanet.jpg" style="height:35vh; width:45vh;" alt="Company 3 Logo">
+                            <h2 class="card-title" style="color: yellow; padding-top:1vh;">Web Development Intern</h2>
+                            <h3 class="card-subtitle text-muted" style="color:lightgreen">Octanet Services Pvt. Ltd.</h3>
+                            <p class="card-text" style="padding-left:2.5vh; padding-right:2.5vh; font-size:1.9vh; margin-top:1vh;">Developed and deployed responsive web applications using HTML, CSS, and JavaScript. Collaborated on front-end design improvements to enhance user experience. </p>
+                            <p style="margin-bottom:2vh; font-size:1.9vh;"><strong>Duration:</strong> 1 Month</p>
+                            <a href="Img/Octanet (Web Intern).pdf" class="btn btn-primary">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card2" style="border: 2px solid violet; padding:2vh; padding-top:3vh;">
+                        <div class="card-body">
+                            <img src="Img/Octanet.jpg" style="height:35vh; width:45vh;" alt="Company 3 Logo">
+                            <h2 class="card-title" style="color: yellow; padding-top:1vh;">FullStack Developer Training</h2>
+                            <h3 class="card-subtitle text-muted" style="color:lightgreen">Octanet Services Pvt. Ltd.</h3>
+                            <p class="card-text" style="padding-left:2.5vh; padding-right:2.5vh; font-size:1.9vh; margin-top:1vh;">Successfully completed a 1-month Full Stack Developer training at Octanet Pvt. Ltd., gaining hands-on experience in front-end and back-end development. Worked on building and deploying dynamic web applications using technologies like HTML, CSS, JavaScript, Python, and Django.</p>
+                            <p style="font-size:1.9vh"><strong>Duration:</strong> 1 Month</p>
+                            <a href="Img/Octanet (Fullstack).pdf" class="btn btn-primary">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card2" style="border: 2px solid violet; padding:2vh; padding-top:3vh;">
+                        <img src="Img/Cognifyz.png" style="height:35vh; width:45vh;" alt="Company 1 Logo">
+                        <div class="card-body">
+                            <h2 class="card-title" style="color: yellow; padding-top:1vh;">Frontend Developer Intern</h2>
+                            <h3 class="card-subtitle text-muted" style="color:lightgreen">Cognifyz Technologies</h3>
+                            <p class="card-text" style="padding-left:2.5vh; padding-right:2.5vh; font-size:1.9vh; margin-top:1vh;">Developed responsive web interfaces using HTML, CSS, and JavaScript to enhance user experience. Collaborated on UI/UX improvements and optimized website performance for better accessibility. </p>
+                            <p style="font-size:1.9vh; margin-bottom:5.5vh;"><strong>Duration:</strong> 1 Month</p>
+                            <a href="Img/Cognifyz Certificate.pdf" class="btn btn-primary">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <a href="#" id="scrollBtn" onclick="toggleScroll()">
+            <i class='bx bx-down-arrow-alt'></i>
+        </a>
+    </footer>    
+
+    <script src="port.js"></script>
+</body>
+
+</html>

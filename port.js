@@ -28,15 +28,15 @@ window.onscroll = ()=>{
 } 
 
 function toggleText() {
-    var moreText = document.getElementById("moreText");
-    var btnText = document.getElementById("readMoreBtn");
+    const moreText = document.getElementById("moreText");
+    const btn = document.getElementById("readMoreBtn");
 
     if (moreText.style.display === "none") {
         moreText.style.display = "block";
-        btnText.innerText = "Read Less";
+        btn.textContent = "Read Less";
     } else {
         moreText.style.display = "none";
-        btnText.innerText = "Read More";
+        btn.textContent = "Read More";
     }
 }
 
